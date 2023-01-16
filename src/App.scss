@@ -1,0 +1,110 @@
+/* framerWork */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* root  */
+
+:root {
+  --cl-primary: #0a0a0a;
+  --cl-accent-default: #a37d4c;
+  --cl-accent-hover: #967142;
+  --cl-white: #fff;
+  --cl-black: #000;
+  --ff-primary: 'Gilda Display';
+  --ff-secondary: 'Barlow';
+  --ff-tertiary: 'Barlow Condensed';
+}
+
+body {
+  font-family: var(--ff-secondary);
+  color: var(--cl-primary);
+}
+
+.container {
+  width: min(100% - clamp(3rem, 5vw + 1.25rem, 4.375rem), 1050px);
+  margin: auto;
+}
+
+section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.h2 {
+  color: var(--cl-primary);
+  font-family: var(--ff-primary);
+  font-size: 45px;
+  margin-bottom: 16px;
+}
+.h3 {
+  color: var(--cl-primary);
+  font-size: 24px;
+  line-height: 32px;
+  font-family: var(--ff-primary);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.btn {
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-family: var(--ff-tertiary);
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all;
+  flex-basis: 1 1;
+  padding-block: 32px;
+}
+.btn-sm {
+  height: 48px;
+}
+.btn-lg {
+  height: 60px;
+}
+.btn-primary {
+  background-color: var(--cl-accent-default);
+
+  &:hover {
+    background-color: var(--cl-accent-hover);
+  }
+}
+.btn-secondary {
+  background-color: var(--cl-primary);
+
+  &:hover {
+    background-color: var(--cl-accent-hover);
+  }
+}
+.btn-white {
+  background-color: white;
+  color: var(--cl-primary);
+}
+
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.gap-4 {
+  gap: 4px;
+}
+.gap-8 {
+  gap: 8px;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}

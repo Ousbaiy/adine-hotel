@@ -1,0 +1,25 @@
+footer {
+  // padding-top: 3rem;
+  // padding-bottom: 3rem;
+  background-color: var(--cl-primary);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--cl-white);
+    font-size: 18px;
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+// media querries
+@media screen and (max-width: 769px) {
+  footer .container {
+    font-size: 12px;
+  }
+}
