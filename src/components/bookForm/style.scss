@@ -1,0 +1,32 @@
+form {
+  height: 70px;
+  background-color: var(--cl-accent-default);
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+    
+
+  > * {
+    flex: 1;
+
+    &:nth-child(-n + 3) {
+      border-right: 1px solid lightgray;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  form {
+    height: 300px;
+    flex-direction: column;
+    padding: 16px;
+    margin-top: 16px;
+    position: static;
+    transform: translateY(0);
+  }
+}

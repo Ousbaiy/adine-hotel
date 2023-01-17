@@ -12,7 +12,6 @@ const Header = () => {
     });
   });
   return (
-    // <header className={`${header ? 'active' : null}`}>
     <header className={`${header ? "active" : ""}`}>
       <div className="container mx-auto">
         <a href="/">

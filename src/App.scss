@@ -26,6 +26,10 @@ body {
   color: var(--cl-primary);
 }
 
+input::placeholder {
+  color: var(--cl-primary);
+}
+
 .container {
   width: min(100% - clamp(3rem, 5vw + 1.25rem, 4.375rem), 1050px);
   margin: auto;
@@ -61,7 +65,10 @@ section {
   justify-content: center;
   transition: all;
   flex-basis: 1 1;
-  padding-block: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: none;
+  cursor: pointer;
 }
 .btn-sm {
   height: 48px;
@@ -107,4 +114,7 @@ section {
 
 a {
   text-decoration: none;
+}
+.relative {
+  position: relative;
 }

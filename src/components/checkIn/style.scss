@@ -1,0 +1,23 @@
+.date {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-end;
+
+  & input[type="text"] {
+    height: 100%;
+    border: none;
+    font-family: var(--ff-secondary);
+    font-size: 16px;
+  }
+
+  .calender {
+    position: absolute;
+    z-index: 10;
+    padding-right: 24px;
+    color: var(--cl-accent-default);
+    line-height: 24px;
+  }
+}

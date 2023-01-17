@@ -1,22 +1,28 @@
-import React, { useContext } from 'react'
-import { RoomConetxt } from '../../context/RoomContext';
-import Room from "../room/Room"
-import "./style.scss"
+import React, { useContext } from "react";
+import { RoomContext } from "../../context/RoomContext";
+import Room from "../room/Room";
+import { SpinnerDotted } from "spinners-react";
+import "./style.scss";
 
 const Rooms = () => {
-  const { rooms } = useContext(RoomConetxt);
+  const { rooms, loading } = useContext(RoomContext);
 
   return (
     <section>
-      <div className='container'>
-        <div className='rooms'>
+      {loading && (
+        <div className="loader">
+          <SpinnerDotted color="white"/>
+        </div>
+      )}
+      <div className="container">
+        <div className="rooms">
           {rooms.map((room) => {
-            return <Room key={room.id} room={room} />
+            return <Room key={room.id} room={room} />;
           })}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Rooms
+export default Rooms;

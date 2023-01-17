@@ -6,9 +6,11 @@ header {
   transition: 0.5s all;
   padding-top: 24px;
   padding-bottom: 24px;
+  
 
   &.active {
     background-color: white;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   }
 
   .container {
@@ -25,7 +27,7 @@ header {
     display: flex;
     align-items: center;
     gap: 24px;
-    font-family: var(--ff-font-tertiary);
+    font-family: var(--ff-tertiary);
     letter-spacing: 3px;
     font-size: 15px;
     text-transform: uppercase;
