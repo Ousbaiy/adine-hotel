@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import "../../datepicker.css";
+import "../../datepicker.scss";
 import { BsCalendar } from "react-icons/bs";
 import "./style.scss";
 

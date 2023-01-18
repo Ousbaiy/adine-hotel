@@ -35,10 +35,10 @@ input::placeholder {
   margin: auto;
 }
 
-section {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+li {
+  list-style: none;
 }
+
 .h2 {
   color: var(--cl-primary);
   font-family: var(--ff-primary);
@@ -78,6 +78,7 @@ section {
 }
 .btn-primary {
   background-color: var(--cl-accent-default);
+  transition: .3s all;
 
   &:hover {
     background-color: var(--cl-accent-hover);

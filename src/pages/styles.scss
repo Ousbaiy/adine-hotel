@@ -1,0 +1,120 @@
+.room-details {
+  min-height: 80vh;
+  background-image: url(../assets/img/room.jpg);
+  background-size: cover;
+  background-color: lightblue;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b3;
+  }
+
+  h1 {
+    position: absolute;
+    font-size: 60px;
+    color: var(--cl-white);
+    font-family: var(--ff-primary);
+    z-index: 20;
+    text-align: center;
+  }
+}
+
+.content {
+  display: flex;
+  gap: 30px;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  .left {
+    flex-basis: 60%;
+
+    p {
+      margin-bottom: 32px;
+      line-height: 1.5;
+    }
+
+    img {
+      margin-bottom: 32px;
+      width: 100%;
+    }
+
+    .info {
+      h3 {
+        margin-bottom: 12px;
+      }
+
+      p {
+        margin-bottom: 48px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 40px;
+
+        .box {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          .icon {
+            color: var(--cl-accent-default);
+            font-size: 30px;
+            line-height:36px; 
+          }
+        }
+      }
+    }
+  }
+  .right {
+    flex-basis: 40%;
+
+    .book-form {
+      background-color: rgb(163 125 76 / 0.2);
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      margin-bottom: 25px;
+      padding: 32px 24px;
+
+      .inputs {
+        height: 60px;
+      }
+    }
+
+    .rules {
+      p {
+        margin-bottom: 24px;
+        line-height: 1.5;
+      }
+
+      .list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        li {
+          display: flex;
+          gap: 15px;
+          svg {
+            color: var(--cl-accent-default);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 998px) {
+  .content {
+    flex-direction: column;
+  }
+}

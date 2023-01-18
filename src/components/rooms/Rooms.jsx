@@ -8,7 +8,7 @@ const Rooms = () => {
   const { rooms, loading } = useContext(RoomContext);
 
   return (
-    <section>
+    <section className="landing">
       {loading && (
         <div className="loader">
           <SpinnerDotted color="white"/>
