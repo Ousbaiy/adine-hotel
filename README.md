@@ -46,7 +46,7 @@ This will create a production-ready build of the app in the dist directory. You 
 - [Vite](https://vitejs.dev/): A lightweight, fast, and opinionated web development build tool.
 - [React](https://reactjs.org/): A JavaScript library for building user interfaces.
 - [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext): A hook in React that allows a component to access the context value within a context provider
-- [Sass]https://sass-lang.com/): ass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+- [SASS](https://sass-lang.com/): SASS is the most mature, stable, and powerful professional grade CSS extension language in the world.
 
 
 
